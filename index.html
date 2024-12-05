@@ -23,27 +23,32 @@
         </article>
         <!-- Form Utama -->
         <form>
+            <div style="font-weight: bold">Jenis Kelamin<br>
+                <input type="checkbox" type="radio" id="Pria">
+                Pria
+            </input>
+            <input type="checkbox" type="radio" id="Wanita">Wanita</input></div>
             <div class="form-item">
                 <label for="berat-badan-input">
                     Berat Badan (kg):
                 </label>
-                <input type="number" id="berat-badan-input" placeholder="Masukkan angka Berat badan Anda">
+                <input type="number" id="berat-badan-input" placeholder="Masukkan angka Berat badan Anda" required />
             </div>
             <div class="form-item">
                 <label for="usia-input">
                     Usia (tahun):
                 </label>
-                <input type="number" id="usia-input" placeholder="Masukkan Usia Anda">
+                <input type="number" id="usia-input" placeholder="Masukkan Usia Anda" required />
             </div>
             <div class="form-item">
                 <label for="tinggi-badan-input">
                     Tinggi Badan (cm):
                 </label>
-                <input type="number" id="tinggi-badan-input" placeholder="Masukkan Tinggi badan Anda">
+                <input type="number" id="tinggi-badan-input" placeholder="Masukkan Tinggi badan Anda" required />
             </div>
 
             <div class="form-item">
-                <button type="button" class="hitung" onclick="getBeratBadan">Hitung BMI</button>
+                <button type="button" class="hitung" onclick="validateForm();" id="hitung">Hitung BMI</button>
                 <button>Reset</button>
             </div>
         </form>
@@ -75,9 +80,9 @@
                 </header>
                 <div class="hasil">
                 <p>Berat Badan Lebih</p>
-                <div result="result-calculation">0</div>
+                <div id="result-calculation">0</div>
                 <p id="info-result">Anda memiliki Berat Badan berlebih</p>
-                <button class="download">Download Hasil BMI</button>
+                <button class="download"><a href="assets/7.-Certificate-of-Health.pdf">Download Hasil BMI</a></button>
             </div>
             </div>
             <!-- Artikel ketiga -->
@@ -90,8 +95,8 @@
                      hingga batas normal.
                 </p1>
                 <div>
-                    <button class="konsultasi">Konsultasi Ahli Gizi Via Aplikasi</button>
-                    <button class="registrasi">Registrasi Online Ahli Gizi</button>
+                    <button class="konsultasi"><a href="https://www.d2d.co.id/">Konsultasi Ahli Gizi Via Aplikasi</a></button>
+                    <button class="registrasi"><a href="https://persadahospital.co.id/kontak">Registrasi Online Ahli Gizi</a></button>
                 </div>
                 <div>
                     <p2>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit <br>
